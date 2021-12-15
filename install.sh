@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -e
+
 # Install oh-my-zsh
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Installing oh-my-zsh ..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -16,8 +20,10 @@ git clone git://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins
 # Copy .bashrc
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Replacing .bashrc ..."
 mv $HOME/.bashrc $HOME/.bashrc_backup
-cp ./azure-cloud-shell/.bashrc $HOME/.bashrc
+cp $HOME/oh-my-azure-cloud-shell/azure-cloud-shell/.bashrc $HOME/.bashrc
     
 # Copy .zshrc
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying .zshrc ..."
-cp ./azure-cloud-shell/.zshrc $HOME/.zshrc
+cp $HOME/oh-my-azure-cloud-shell/azure-cloud-shell/.zshrc $HOME/.zshrc
+
+echo "[$(date +"%Y-%m-%d %H:%M:%S")] Done. Type 'exit' to restart your Azure Cloud Shell session ..."
