@@ -5,7 +5,7 @@ set -e
 # Install oh-my-zsh
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Installing oh-my-zsh ..."
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] While installing oh-my-zsh, you might be asked:"
-echo "[$(date +"%Y-%m-%d %H:%M:%S")]     'Do you want to change your default shell to zsh?'"
+echo "[$(date +"%Y-%m-%d %H:%M:%S")]     'Do you want to change your default shell to zsh? [Y/n]'"
 echo "[$(date +"%Y-%m-%d %H:%M:%S")]"
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Then type 'n' and continue ..."
 echo "[$(date +"%Y-%m-%d %H:%M:%S")]"
@@ -15,6 +15,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Install theme: Spaceship
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Continuing to install the remainders ..."
+echo "[$(date +"%Y-%m-%d %H:%M:%S")]"
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Installing theme: Spaceship ..."
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.oh-my-zsh/custom/themes/spaceship-prompt" --depth=1
 ln -s "$HOME/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme" "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"

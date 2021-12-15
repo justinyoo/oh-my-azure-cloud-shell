@@ -18,7 +18,7 @@ If you want to apply oh-my-zsh to your Azure Cloud Shell environment, follow the
     git clone https://github.com/justinyoo/oh-my-azure-cloud-shell.git
     ```
 
-4. Run the following command.
+4. Run the following commands and follow the instruction on the screen.
 
     ```bash
     cd ~/oh-my-azure-cloud-shell
