@@ -76,8 +76,7 @@ If you want to apply [oh-my-posh](https://ohmyposh.dev/) to your [Azure Cloud Sh
     ~/oh-my-azure-cloud-shell/install.ps1 -Theme p10k
     ```
 
-5. Restart your [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?WT.mc_id=dotnet-52663-juyoo).
-6. If you want to turn on or off the clock feature while using the [Powerlevel10k - Rainbow](https://ohmyposh.dev/docs/themes#powerlevel10k_rainbow) theme, run the following command:
+5. If you want to turn on or off the clock feature while using the [Powerlevel10k - Rainbow](https://ohmyposh.dev/docs/themes#powerlevel10k_rainbow) theme, run the following command:
 
     ```powershell
     # Turn on the clock feature
