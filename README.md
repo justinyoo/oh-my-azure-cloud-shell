@@ -91,7 +91,7 @@ If you want to apply [oh-my-posh](https://ohmyposh.dev/) to your [Azure Cloud Sh
 
 ## Elements of oh-my-zsh ##
 
-* Theme:
+* Themes:
   * [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt)
   * [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 * Plugins:
@@ -102,6 +102,8 @@ If you want to apply [oh-my-posh](https://ohmyposh.dev/) to your [Azure Cloud Sh
 
 ## Elements of oh-my-posh ##
 
-* Theme:
+* Themes:
   * [Spaceship](https://ohmyposh.dev/docs/themes#spaceship)
   * [Powerlevel10k - Rainbow](https://ohmyposh.dev/docs/themes#powerlevel10k_rainbow)
+* Plugins:
+  * [Terminal Icons](https://github.com/devblackops/Terminal-Icons)
