@@ -5,7 +5,7 @@ set -e
 function usage() {
     cat <<USAGE
 
-    Usage: $0 -c|--with-clock
+    Usage: $0 [-c|--with-clock]
 
     Options:
         -c|--with-clock: This switch enables clock.

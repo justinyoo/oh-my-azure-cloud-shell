@@ -6,7 +6,7 @@ set -e
 function usage() {
     cat <<USAGE
 
-    Usage: $0 -t|--theme theme [-c|--with-clock]
+    Usage: $0 [-t|--theme theme] [-c|--with-clock]
 
     Options:
         -t|--theme:      The name of Theme.
@@ -95,17 +95,17 @@ if [[ $theme_name == "spaceship" ]]; then
     ln -s "$HOME/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme" "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
     # Copy .zshrc
-    echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying .zshrc for spaceship ..."
+    echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying .zshrc for Spaceship ..."
     cp $HOME/oh-my-azure-cloud-shell/azure-cloud-shell/.zshrc-spaceship $HOME/.zshrc
 
 # Install theme: Powerlevel10k
 elif [[ $theme_name == "p10k" ]]; then
-    echo "[$(date +"%Y-%m-%d %H:%M:%S")] Installing theme: Spaceship ..."
+    echo "[$(date +"%Y-%m-%d %H:%M:%S")] Installing theme: Powrelevel10k ..."
     git clone https://github.com/romkatv/powerlevel10k.git "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" --depth=1
     ln -s "$HOME/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme" "$HOME/.oh-my-zsh/custom/themes/powerlevel10k.zsh-theme"
 
     # Copy .zshrc
-    echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying .zshrc for powerlevel10k ..."
+    echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying .zshrc for Powerlevel10k ..."
     cp $HOME/oh-my-azure-cloud-shell/zsh/.zshrc-p10k $HOME/.zshrc
 
     # Install p10k config with clock
