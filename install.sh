@@ -106,25 +106,25 @@ elif [[ $theme_name == "p10k" ]]; then
 
     # Copy .zshrc
     echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying .zshrc for powerlevel10k ..."
-    cp $HOME/oh-my-azure-cloud-shell/azure-cloud-shell/.zshrc-p10k $HOME/.zshrc
+    cp $HOME/oh-my-azure-cloud-shell/zsh/.zshrc-p10k $HOME/.zshrc
 
     # Install p10k config with clock
     if [[ $with_clock == "true" ]]; then
         # Copy p10k.zsh
         echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying .p10k.zsh with clock ..."
-        cp $HOME/oh-my-azure-cloud-shell/azure-cloud-shell/.p10k-with-clock.zsh $HOME/.p10k.zsh
+        cp $HOME/oh-my-azure-cloud-shell/zsh/.p10k-with-clock.zsh $HOME/.p10k.zsh
     
     # Install p10k config without clock
     else
         # Copy p10k.zsh
         echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying p10k.zsh without clock ..."
-        cp $HOME/oh-my-azure-cloud-shell/azure-cloud-shell/.p10k-without-clock.zsh $HOME/.p10k.zsh
+        cp $HOME/oh-my-azure-cloud-shell/zsh/.p10k-without-clock.zsh $HOME/.p10k.zsh
     fi
 fi
 
 # Copy .bashrc
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Replacing .bashrc ..."
 mv $HOME/.bashrc $HOME/.bashrc_backup
-cp $HOME/oh-my-azure-cloud-shell/azure-cloud-shell/.bashrc $HOME/.bashrc
+cp $HOME/oh-my-azure-cloud-shell/zsh/.bashrc $HOME/.bashrc
 
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Installation completed. Type 'exit' to restart your Azure Cloud Shell session ..."

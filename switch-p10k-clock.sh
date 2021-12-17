@@ -49,12 +49,12 @@ mv $HOME/.p10k.zsh $HOME/.p10k.zsh_backup
 # Install p10k config with clock
 if [[ $with_clock == "true" ]]; then
     echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying .p10k.zsh with clock ..."
-    cp $HOME/oh-my-azure-cloud-shell/azure-cloud-shell/.p10k-with-clock.zsh $HOME/.p10k.zsh
+    cp $HOME/oh-my-azure-cloud-shell/zsh/.p10k-with-clock.zsh $HOME/.p10k.zsh
 
 # Install p10k config without clock
 else
     echo "[$(date +"%Y-%m-%d %H:%M:%S")] Copying .p10k.zsh without clock ..."
-    cp $HOME/oh-my-azure-cloud-shell/azure-cloud-shell/.p10k-without-clock.zsh $HOME/.p10k.zsh
+    cp $HOME/oh-my-azure-cloud-shell/zsh/.p10k-without-clock.zsh $HOME/.p10k.zsh
 fi
 
 # source $HOME/.p10k.zsh
