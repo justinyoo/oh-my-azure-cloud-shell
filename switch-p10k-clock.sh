@@ -59,4 +59,4 @@ fi
 
 # source $HOME/.p10k.zsh
 
-echo "[$(date +"%Y-%m-%d %H:%M:%S")] Switch completed. Run 'source ~/.p10k.zsh' to apply changes."
+echo "[$(date +"%Y-%m-%d %H:%M:%S")] Switch completed. Run 'source ~/.p10k.zsh' to apply changes ..."
