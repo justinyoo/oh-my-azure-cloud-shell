@@ -86,7 +86,7 @@ echo "[$(date +"%Y-%m-%d %H:%M:%S")]"
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Installing plugins ..."
 git clone https://github.com/zsh-users/zsh-completions.git $HOME/.oh-my-zsh/custom/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone git://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # Install theme: Spaceship
 if [[ $theme_name == "spaceship" ]]; then

@@ -35,7 +35,7 @@ If you want to apply oh-my-zsh to your [Azure Cloud Shell](https://docs.microsof
     ```
 
 5. Restart your [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?WT.mc_id=dotnet-52663-juyoo).
-6. If you want to switch turn on or off the clock feature while using the [Powerlevel10k](https://github.com/romkatv/powerlevel10k) theme, run the following command:
+6. If you want to turn on or off the clock feature while using the [Powerlevel10k](https://github.com/romkatv/powerlevel10k) theme, run the following command:
 
     ```bash
     # Turn on the clock feature
@@ -61,7 +61,7 @@ TBD
 * Plugins:
   * [zsh-completions](https://github.com/zsh-users/zsh-completions)
   * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-  * [zsh-autosuggestions](git://github.com/zsh-users/zsh-autosuggestions)
+  * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 
 ## Elements of oh-my-posh ##
