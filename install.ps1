@@ -5,13 +5,16 @@ Param(
 
     [switch]
     [Parameter(Mandatory=$false)]
-    $WithClock
+    $WithClock,
+
+    [switch]
+    [Parameter(Mandatory=$false)]
+    $Help
 )
 
 function Show-Usage {
     Write-Output "
-
-    Usage: $(Split-Path $MyInvocation.ScriptName -Leaf) [-Theme theme] [-WithClock]
+    Usage: $(Split-Path $MyInvocation.ScriptName -Leaf) [-Theme theme] [-WithClock] [-Help]
 
     Options:
         -Theme:     The name of Theme.
@@ -24,7 +27,13 @@ function Show-Usage {
 
 "
 
-    Exit 1
+    Exit 0
+}
+
+# Show usage
+if ($Help -eq $true) {
+    Show-Usage
+    Exit 0
 }
 
 if ($Theme -eq "") {

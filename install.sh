@@ -6,7 +6,7 @@ set -e
 function usage() {
     cat <<USAGE
 
-    Usage: $0 [-t|--theme theme] [-c|--with-clock]
+    Usage: $0 [-t|--theme theme] [-c|--with-clock] [-h|--help]
 
     Options:
         -t|--theme:      The name of Theme.

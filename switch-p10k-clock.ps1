@@ -1,22 +1,30 @@
 Param(
     [switch]
     [Parameter(Mandatory=$false)]
-    $WithClock
+    $WithClock,
+
+    [switch]
+    [Parameter(Mandatory=$false)]
+    $Help
 )
 
 function Show-Usage {
     Write-Output "
-
-    Usage: $(Split-Path $MyInvocation.ScriptName -Leaf) [-WithClock]
+    Usage: $(Split-Path $MyInvocation.ScriptName -Leaf) [-WithClock] [-Help]
 
     Options:
         -WithClock: This switch enables clock.
-
         -Help:      Show this message.
 
 "
 
-    Exit 1
+    Exit 0
+}
+
+# Show usage
+if ($Help -eq $true) {
+    Show-Usage
+    Exit 0
 }
 
 $poshthemes = "$HOME/.poshthemes"
