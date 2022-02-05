@@ -58,6 +58,11 @@ Write-Output "[$(Get-Date -Format "yyyy-MM-dd HH:mm:ss")] Installing Terminal Ic
 Install-Module Terminal-Icons -Scope CurrentUser -Repository PSGallery -Force
 Import-Module Terminal-Icons -Scope Local -Force
 
+# Install Az
+Write-Output "[$(Get-Date -Format "yyyy-MM-dd HH:mm:ss")] Installing Az ..."
+Install-Module Az -Scope CurrentUser -Repository PSGallery -Force
+Import-Module Az -Scope Local -Force
+
 $poshthemes = "$HOME/.poshthemes"
 if (!(Test-Path -Path $poshthemes)) {
     New-Item -ItemType Directory -Path $poshthemes -Force
